@@ -47,20 +47,122 @@
         "rating": "1800+"
       }
     ],
-    "education": [
+    "technicalSkills": [
+
       {
-        "institution": "Stanford University",
-        "degree": "M.S. in Computer Science",
-        "duration": "2020 - 2022",
-        "description": "Specialized in Artificial Intelligence and Machine Learning"
+      
+      "title": "Frontend",
+      
+      "skills": ["HTML", "CSS", "JavaScript", "React", "Vue.js", "Angular"]
+      
       },
+      
       {
-        "institution": "MIT",
-        "degree": "B.S. in Computer Science",
-        "duration": "2016 - 2020",
-        "description": "Minor in Mathematics, Dean's List all semesters"
+      
+      "title": "Backend",
+      
+      "skills": [
+      
+      "Node.js",
+      
+      "Python",
+      
+      "Java",
+      
+      "Express.js",
+      
+      "Django",
+      
+      "Spring"
+      
+      ]
+      
+      },
+      
+      {
+      
+      "title": "Databases",
+      
+      "skills": ["MySQL", "PostgreSQL", "MongoDB", "Firebase"]
+      
+      },
+      
+      {
+      
+      "title": "Cloud",
+      
+      "skills": ["AWS", "Azure", "Google Cloud Platform"]
+      
+      },
+      
+      {
+      
+      "title": "Tools & Technologies",
+      
+      "skills": ["Git", "Docker", "Kubernetes", "CI/CD"]
+      
       }
-    ],
+      
+      ],
+      
+      "certifications": [
+      
+      {
+      
+      "title": "AWS Certified Developer - Associate",
+      
+      "link": "#"
+      
+      },
+      
+      {
+      
+      "title": "Google Cloud Professional Cloud Architect",
+      
+      "link": "#"
+      
+      },
+      
+      {
+      
+      "title": "Microsoft Certified: Azure Fundamentals",
+      
+      "link": "#"
+      
+      }
+      
+      ],
+      
+      "education": [
+      
+      {
+      
+      "institution": "Stanford University",
+      
+      "degree": "M.S. in Computer Science",
+      
+      "duration": "2020 - 2022",
+      
+      "description":
+      
+      "Specialized in Artificial Intelligence and Machine Learning"
+      
+      },
+      
+      {
+      
+      "institution": "MIT",
+      
+      "degree": "B.S. in Computer Science",
+      
+      "duration": "2016 - 2020",
+      
+      "description": "Minor in Mathematics, Dean's List all semesters"
+      
+      }
+      
+      ],
+
     "projects": [
       {
         "title": "E-commerce Platform",
@@ -124,6 +226,7 @@
         }
       ]
     },
+    "hobbies": ["Reading", "Hiking", "Photography", "Gaming", "Traveling"],
     "contact": {
       "email": "john.doe@hi.com",
       "phone": "+1 (123) 456-7890"

@@ -23,6 +23,12 @@ function populatePortfolio(data) {
   // Coding profiles
   populateCodingProfiles(data.codingProfiles);
 
+  // Technical Skills
+  populateTechnicalSkills(data.technicalSkills);
+
+  // Certifications
+  populateCertifications(data.certifications);
+
   // Education
   populateEducation(data.education);
 
@@ -31,6 +37,9 @@ function populatePortfolio(data) {
 
   // Experience - Internships & Full-time
   populateExperience(data.experience);
+
+  // Hobbies
+  populateHobbies(data.hobbies);
 
   // Contact info
   populateContactInfo(data.contact);
@@ -75,6 +84,49 @@ function populateCodingProfiles(profiles) {
             <a href="${profile.link}" target="_blank">View Profile</a>
         `;
     codingProfilesContainer.appendChild(profileCard);
+  });
+}
+
+// Function to populate technical skills
+function populateTechnicalSkills(skillsData) {
+  const skillsContainer = document.getElementById("skills-container");
+  skillsContainer.innerHTML = ""; // Clear existing content
+
+  skillsData.forEach((skillGroup) => {
+    const skillCard = document.createElement("div");
+    skillCard.className = "skill-card";
+    let skillsListHTML = '<ul class="skill-list">';
+    skillGroup.skills.forEach((skill) => {
+      skillsListHTML += `<li>${skill}</li>`;
+    });
+    skillsListHTML += "</ul>";
+    skillCard.innerHTML = `
+          <h3>${skillGroup.title}</h3>
+          ${skillsListHTML}
+      `;
+    skillsContainer.appendChild(skillCard);
+  });
+}
+
+// Function to populate certifications
+function populateCertifications(certifications) {
+  const certificationsContainer = document.getElementById(
+    "certifications-container"
+  );
+  certificationsContainer.innerHTML = ""; // Clear existing content
+
+  certifications.forEach((certification) => {
+    const certificationCard = document.createElement("div");
+    certificationCard.className = "certification-card";
+    certificationCard.innerHTML = `
+          <h3>${certification.title}</h3>
+          ${
+            certification.link
+              ? `<a href="${certification.link}" target="_blank">View Certificate</a>`
+              : ""
+          }
+      `;
+    certificationsContainer.appendChild(certificationCard);
   });
 }
 
@@ -171,6 +223,23 @@ function populateExperience(experience) {
   } else {
     fulltimeContainer.innerHTML = "<p>No full-time experience available.</p>";
   }
+}
+
+// Function to populate hobbies section
+function populateHobbies(hobbies) {
+  const hobbiesContainer = document.getElementById("hobbies-container");
+  hobbiesContainer.innerHTML = ""; // Clear existing content
+
+  hobbies.forEach((hobby) => {
+    const hobbyCard = document.createElement("div");
+    hobbyCard.className = "hobby-card";
+    // You can add icons based on the hobby if you have them in your data
+    hobbyCard.innerHTML = `
+          <i class="fas fa-star"></i>
+          <p>${hobby}</p>
+      `;
+    hobbiesContainer.appendChild(hobbyCard);
+  });
 }
 
 // Function to populate contact info
