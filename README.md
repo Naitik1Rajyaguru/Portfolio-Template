@@ -7,13 +7,18 @@ A simple, responsive, and aesthetically pleasing portfolio website that loads da
 - Responsive design that works on all device sizes
 - Dynamic content loading from JSON data
 - Sections for:
+
   - About/Hero
+  - Skills
+  - Certificates
   - Social profiles
   - Coding profiles
   - Education
   - Projects
   - Experience (with tabs for internships and full-time roles)
+  - Hobbies
   - Contact information
+
 - Modern UI with smooth animations and transitions
 
 ## File Structure
@@ -44,11 +49,11 @@ Edit the CSS variables in the `:root` selector in `styles.css`:
 
 ```css
 :root {
-    --primary: #007bff; /* Main color */
-    --secondary: #6c757d; /* Secondary color */
-    --dark: #343a40; /* Dark text color */
-    --light: #f8f9fa; /* Light background color */
-    /* ... other variables ... */
+  --primary: #007bff; /* Main color */
+  --secondary: #6c757d; /* Secondary color */
+  --dark: #343a40; /* Dark text color */
+  --light: #f8f9fa; /* Light background color */
+  /* ... other variables ... */
 }
 ```
 
@@ -57,3 +62,4 @@ Edit the CSS variables in the `:root` selector in `styles.css`:
 - Font Awesome for icons (CDN)
 - Google Fonts for typography
 - Claude.ai for creating this whole project
+- gemini.ai for adding details when claude free access expired
