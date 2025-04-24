@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Portfolio</div>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="about">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hi, I'm <span id="hero-name">Your Name</span></h1>
+          <p id="hero-title">Software Developer & Tech Enthusiast</p>
+          <p id="hero-description">
+            I build elegant, user-friendly applications with modern
+            technologies. Passionate about solving complex problems and creating
+            meaningful digital experiences.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#" id="resume-link" class="btn btn-outline" target="_blank"
+              >View Resume <i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="/api/placeholder/400/400"
+            alt="Profile Photo"
+            id="profile-photo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="profiles">
+      <div class="container">
+        <h2 class="section-title">Social Profiles</h2>
+        <div class="social-profiles" id="social-profiles-container">
+          <!-- Social profiles will be generated here -->
+        </div>
+
+        <h2 class="section-title">Coding Profiles</h2>
+        <div class="coding-profiles" id="coding-profiles-container">
+          <!-- Coding profiles will be generated here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-container" id="education-container">
+          <!-- Education cards will be generated here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container" id="projects-container">
+          <!-- Project cards will be generated here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-tabs">
+          <button class="tab-btn active" data-tab="internship">
+            Internships
+          </button>
+          <button class="tab-btn" data-tab="fulltime">Full-time</button>
+        </div>
+        <div class="experience-content">
+          <div class="experience-type active" id="internship-container">
+            <!-- Internship cards will be generated here -->
+          </div>
+          <div class="experience-type" id="fulltime-container">
+            <!-- Full-time experience cards will be generated here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-info" id="contact-container">
+            <!-- Contact info will be generated here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; <span id="current-year">2025</span>
+          <span id="footer-name">Your Name</span>. All rights reserved.
+        </p>
+        <div class="social-icons" id="footer-social-icons">
+          <!-- Footer social icons will be generated here -->
+        </div>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
