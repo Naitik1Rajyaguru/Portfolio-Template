@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set up tab functionality for experience section
   setupTabs();
+  initResumeGenerator();
 });
 
 // Function to populate the DOM with portfolio data
@@ -14,7 +15,7 @@ function populatePortfolio(data) {
   document.getElementById("hero-name").textContent = data.name;
   document.getElementById("hero-title").textContent = data.title;
   document.getElementById("hero-description").textContent = data.description;
-  document.getElementById("resume-link").href = data.resumeLink;
+  // document.getElementById("resume-link").href = data.resumeLink;
   document.getElementById("profile-photo").src = data.profilePhoto;
 
   // Social profiles
@@ -23,8 +24,8 @@ function populatePortfolio(data) {
   // Coding profiles
   populateCodingProfiles(data.codingProfiles);
 
-  // Technical Skills
-  populateTechnicalSkills(data.technicalSkills);
+  // Skills
+  populateSkills(data.skills);
 
   // Certifications
   populateCertifications(data.certifications);
@@ -87,8 +88,8 @@ function populateCodingProfiles(profiles) {
   });
 }
 
-// Function to populate technical skills
-function populateTechnicalSkills(skillsData) {
+// Function to populate Skills
+function populateSkills(skillsData) {
   const skillsContainer = document.getElementById("skills-container");
   skillsContainer.innerHTML = ""; // Clear existing content
 
@@ -142,7 +143,7 @@ function populateEducation(education) {
             <h3>${edu.institution}</h3>
             <div class="degree">${edu.degree}</div>
             <div class="duration">${edu.duration}</div>
-            <p>${edu.description}</p>
+            <p>${marked.parse(edu.description)}</p>
         `;
     educationContainer.appendChild(educationCard);
   });
@@ -169,7 +170,7 @@ function populateProjects(projects) {
             <div class="project-content">
                 <h3>${project.title}</h3>
                 <div class="duration">${project.duration}</div>
-                <p>${project.description}</p>
+                <p>${marked.parse(project.description)}</p>
                 <div class="project-links">
                     ${linksHTML}
                 </div>
@@ -318,6 +319,7 @@ function fetchPortfolioData() {
     })
     .then((data) => {
       populatePortfolio(data);
+      window.portfolioData = data;
     })
     .catch((error) => {
       console.error("Error fetching the portfolio data:", error);
@@ -326,3 +328,5 @@ function fetchPortfolioData() {
         '<div class="container" style="text-align:center;padding:50px;"><h2>Unable to load portfolio data</h2><p>Please try again later.</p></div>';
     });
 }
+
+// ******************************************

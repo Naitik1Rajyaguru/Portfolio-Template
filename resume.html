@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Resume</title>
+    <link rel="stylesheet" href="resume.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="resume-content"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const resumeContent = sessionStorage.getItem("resumeContent");
+        if (resumeContent) {
+          document.getElementById("resume-content").innerHTML = resumeContent;
+        } else {
+          document.getElementById("resume-content").innerHTML =
+            "<p>No resume content found. Please generate a resume first.</p>";
+        }
+
+        // Add print button
+        const printButton = document.createElement("button");
+        printButton.id = "print-resume";
+        printButton.textContent = "Print Resume";
+        printButton.addEventListener("click", function () {
+          window.print();
+        });
+        document.body.appendChild(printButton);
+      });
+    </script>
+  </body>
+</html>

@@ -1,234 +1,202 @@
 {
-    "name": "John Doe",
-    "title": "Full Stack Developer",
-    "description": "Passionate software engineer with expertise in web development, cloud solutions, and AI. I love building scalable applications that solve real-world problems.",
-    "profilePhoto": "/api/placeholder/400/400",
-    "resumeLink": "#",
-    "socialProfiles": [
-      {
-        "name": "GitHub",
-        "link": "https://github.com/johndoe",
-        "icon": "fab fa-github"
-      },
-      {
-        "name": "LinkedIn",
-        "link": "https://linkedin.com/in/johndoe",
-        "icon": "fab fa-linkedin"
-      },
-      {
-        "name": "Twitter",
-        "link": "https://twitter.com/johndoe",
-        "icon": "fab fa-twitter"
-      }
-    ],
-    "codingProfiles": [
-      {
-        "name": "LeetCode",
-        "link": "https://leetcode.com/johndoe",
-        "username": "johndoe",
-        "rating": "Top 5%"
-      },
-      {
-        "name": "GeeksforGeeks",
-        "link": "https://geeksforgeeks.org/user/johndoe",
-        "username": "johndoe",
-        "rating": "Expert"
-      },
-      {
-        "name": "HackerRank",
-        "link": "https://hackerrank.com/johndoe",
-        "username": "johndoe",
-        "rating": "5 Star"
-      },
-      {
-        "name": "CodeChef",
-        "link": "https://codechef.com/users/johndoe",
-        "username": "johndoe",
-        "rating": "1800+"
-      }
-    ],
-    "technicalSkills": [
-
-      {
-      
+  "name": "John Doe",
+  "title": "Full Stack Developer",
+  "description": "Passionate software engineer with expertise in web development, cloud solutions, and AI. I love building scalable applications that solve real-world problems.",
+  "profilePhoto": "/api/placeholder/400/400",
+  "resumeLink": "#",
+  "socialProfiles": [
+    {
+      "name": "GitHub",
+      "link": "https://github.com/johndoe",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://linkedin.com/in/johndoe",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/johndoe",
+      "icon": "fab fa-twitter"
+    }
+  ],
+  "codingProfiles": [
+    {
+      "name": "LeetCode",
+      "link": "https://leetcode.com/johndoe",
+      "username": "johndoe",
+      "rating": "Top 5%"
+    },
+    {
+      "name": "GeeksforGeeks",
+      "link": "https://geeksforgeeks.org/user/johndoe",
+      "username": "johndoe",
+      "rating": "Expert"
+    },
+    {
+      "name": "HackerRank",
+      "link": "https://hackerrank.com/johndoe",
+      "username": "johndoe",
+      "rating": "5 Star"
+    },
+    {
+      "name": "CodeChef",
+      "link": "https://codechef.com/users/johndoe",
+      "username": "johndoe",
+      "rating": "1800+"
+    }
+  ],
+  "skills": [
+    {
       "title": "Frontend",
-      
-      "skills": ["HTML", "CSS", "JavaScript", "React", "Vue.js", "Angular"]
-      
-      },
-      
-      {
-      
-      "title": "Backend",
-      
       "skills": [
-      
-      "Node.js",
-      
-      "Python",
-      
-      "Java",
-      
-      "Express.js",
-      
-      "Django",
-      
-      "Spring"
-      
-      ]
-      
-      },
-      
-      {
-      
-      "title": "Databases",
-      
-      "skills": ["MySQL", "PostgreSQL", "MongoDB", "Firebase"]
-      
-      },
-      
-      {
-      
-      "title": "Cloud",
-      
-      "skills": ["AWS", "Azure", "Google Cloud Platform"]
-      
-      },
-      
-      {
-      
-      "title": "Tools & Technologies",
-      
-      "skills": ["Git", "Docker", "Kubernetes", "CI/CD"]
-      
-      }
-      
-      ],
-      
-      "certifications": [
-      
-      {
-      
-      "title": "AWS Certified Developer - Associate",
-      
-      "link": "#"
-      
-      },
-      
-      {
-      
-      "title": "Google Cloud Professional Cloud Architect",
-      
-      "link": "#"
-      
-      },
-      
-      {
-      
-      "title": "Microsoft Certified: Azure Fundamentals",
-      
-      "link": "#"
-      
-      }
-      
-      ],
-      
-      "education": [
-      
-      {
-      
-      "institution": "Stanford University",
-      
-      "degree": "M.S. in Computer Science",
-      
-      "duration": "2020 - 2022",
-      
-      "description":
-      
-      "Specialized in Artificial Intelligence and Machine Learning"
-      
-      },
-      
-      {
-      
-      "institution": "MIT",
-      
-      "degree": "B.S. in Computer Science",
-      
-      "duration": "2016 - 2020",
-      
-      "description": "Minor in Mathematics, Dean's List all semesters"
-      
-      }
-      
-      ],
-
-    "projects": [
-      {
-        "title": "E-commerce Platform",
-        "duration": "Jan 2023 - Present",
-        "description": "Built a full-featured e-commerce platform with React, Node.js, and MongoDB. Implemented user authentication, product catalog, shopping cart, and payment integration.",
-        "githubLink": "https://github.com/johndoe/ecommerce",
-        "liveLink": "https://ecommerce-demo.com"
-      },
-      {
-        "title": "AI Image Recognition",
-        "duration": "Mar 2022 - Dec 2022",
-        "description": "Developed a machine learning model for image recognition using TensorFlow. Achieved 95% accuracy on test data.",
-        "githubLink": "https://github.com/johndoe/ai-image-recognition"
-      },
-      {
-        "title": "Personal Finance Tracker",
-        "duration": "Sep 2021 - Feb 2022",
-        "description": "Created a web application to track personal expenses and provide insights on spending habits. Used Vue.js and Firebase.",
-        "githubLink": "https://github.com/johndoe/finance-tracker",
-        "liveLink": "https://finance-tracker-demo.com"
-      },
-      {
-        "title": "Task Management App",
-        "duration": "Jun 2021 - Aug 2021",
-        "description": "Built a collaborative task management application with real-time updates using Socket.io and React.",
-        "githubLink": "https://github.com/johndoe/task-manager",
-        "liveLink": "https://task-manager-demo.com"
-      }
-    ],
-    "experience": {
-      "internship": [
-        {
-          "company": "Google",
-          "duration": "May 2021 - Aug 2021",
-          "designation": "Software Engineering Intern",
-          "projectTitle": "Search Optimization Algorithm",
-          "description": "Worked on improving Google's search algorithm efficiency by 15%. Implemented machine learning techniques to enhance search result relevance."
-        },
-        {
-          "company": "Microsoft",
-          "duration": "May 2020 - Aug 2020",
-          "designation": "Software Development Intern",
-          "projectTitle": "Azure DevOps Enhancements",
-          "description": "Developed new features for Azure DevOps that improved CI/CD workflow efficiency for enterprise customers."
-        }
-      ],
-      "fulltime": [
-        {
-          "company": "Amazon",
-          "duration": "Jan 2023 - Present",
-          "designation": "Senior Software Engineer",
-          "projectTitle": "AWS Lambda Improvements",
-          "description": "Leading a team of 5 engineers to enhance AWS Lambda performance and scalability. Reduced cold start times by 40%."
-        },
-        {
-          "company": "Facebook",
-          "duration": "Aug 2022 - Dec 2022",
-          "designation": "Software Engineer",
-          "projectTitle": "News Feed Algorithm",
-          "description": "Optimized the news feed recommendation system to increase user engagement by 12%."
-        }
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "Angular"
       ]
     },
-    "hobbies": ["Reading", "Hiking", "Photography", "Gaming", "Traveling"],
-    "contact": {
-      "email": "john.doe@hi.com",
-      "phone": "+1 (123) 456-7890"
+    {
+      "title": "Backend",
+      "skills": [
+        "Node.js",
+        "Python",
+        "Java",
+        "Express.js",
+        "Django",
+        "Spring"
+      ]
+    },
+    {
+      "title": "Databases",
+      "skills": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Firebase"
+      ]
+    },
+    {
+      "title": "Cloud",
+      "skills": [
+        "AWS",
+        "Azure",
+        "Google Cloud Platform"
+      ]
+    },
+    {
+      "title": "Tools & Technologies",
+      "skills": [
+        "Git",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ]
     }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Developer - Associate",
+      "link": "#"
+    },
+    {
+      "title": "Google Cloud Professional Cloud Architect",
+      "link": "#"
+    },
+    {
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "link": "#"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "degree": "M.S. in Computer Science",
+      "duration": "2020 - 2022",
+      "description": "Specialized in Artificial Intelligence and Machine Learning"
+    },
+    {
+      "institution": "MIT",
+      "degree": "B.S. in Computer Science",
+      "duration": "2016 - 2020",
+      "description": "Minor in Mathematics, Dean's List all semesters"
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-commerce Platform",
+      "duration": "Jan 2023 - Present",
+      "description": "Built a full-featured e-commerce platform with React, Node.js, and MongoDB. Implemented user authentication, product catalog, shopping cart, and payment integration.",
+      "githubLink": "https://github.com/johndoe/ecommerce",
+      "liveLink": "https://ecommerce-demo.com"
+    },
+    {
+      "title": "AI Image Recognition",
+      "duration": "Mar 2022 - Dec 2022",
+      "description": "Developed a machine learning model for image recognition using TensorFlow. Achieved 95% accuracy on test data.",
+      "githubLink": "https://github.com/johndoe/ai-image-recognition"
+    },
+    {
+      "title": "Personal Finance Tracker",
+      "duration": "Sep 2021 - Feb 2022",
+      "description": "Created a web application to track personal expenses and provide insights on spending habits. Used Vue.js and Firebase.",
+      "githubLink": "https://github.com/johndoe/finance-tracker",
+      "liveLink": "https://finance-tracker-demo.com"
+    },
+    {
+      "title": "Task Management App",
+      "duration": "Jun 2021 - Aug 2021",
+      "description": "Built a collaborative task management application with real-time updates using Socket.io and React.\n\n Built a collaborative task management application with real-time updates using Socket.io and React.",
+      "githubLink": "https://github.com/johndoe/task-manager",
+      "liveLink": "https://task-manager-demo.com"
+    }
+  ],
+  "experience": {
+    "internship": [
+      {
+        "company": "Google",
+        "duration": "May 2021 - Aug 2021",
+        "designation": "Software Engineering Intern",
+        "projectTitle": "Search Optimization Algorithm",
+        "description": "Worked on improving Google's search algorithm efficiency by 15%. Implemented machine learning techniques to enhance search result relevance."
+      },
+      {
+        "company": "Microsoft",
+        "duration": "May 2020 - Aug 2020",
+        "designation": "Software Development Intern",
+        "projectTitle": "Azure DevOps Enhancements",
+        "description": "Developed new features for Azure DevOps that improved CI/CD workflow efficiency for enterprise customers."
+      }
+    ],
+    "fulltime": [
+      {
+        "company": "Amazon",
+        "duration": "Jan 2023 - Present",
+        "designation": "Senior Software Engineer",
+        "projectTitle": "AWS Lambda Improvements",
+        "description": "Leading a team of 5 engineers to enhance AWS Lambda performance and scalability. Reduced cold start times by 40%."
+      },
+      {
+        "company": "Facebook",
+        "duration": "Aug 2022 - Dec 2022",
+        "designation": "Software Engineer",
+        "projectTitle": "News Feed Algorithm",
+        "description": "Optimized the news feed recommendation system to increase user engagement by 12%."
+      }
+    ]
+  },
+  "hobbies": [
+    "Reading",
+    "Hiking",
+    "Photography",
+    "Gaming",
+    "Traveling"
+  ],
+  "contact": {
+    "email": "john.doe@hi.com",
+    "phone": "+1 (123) 456-7890"
   }
+}
