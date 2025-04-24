@@ -1,8 +1,8 @@
 /* Main resume styles */
 body {
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 11pt;
-  line-height: 1.4;
+  font-size: 10pt;
+  line-height: 1.3;
   color: #333;
   background-color: #f0f0f0;
   margin: 0;
@@ -11,55 +11,57 @@ body {
 
 .resume-container {
   max-width: 800px;
-  margin: 30px auto;
+  margin: 20px auto;
   background-color: white;
-  padding: 40px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
 
 /* Header styles */
 .personal {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 h1.name {
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   text-align: center;
   color: #2c3e50;
 }
 
 h2.title {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
   color: #7f8c8d;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .summary {
   text-align: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 15px;
   max-width: 600px;
-  line-height: 1.5;
+  line-height: 1.4;
   color: #555;
+  font-size: 0.95em;
 }
 
 .contact-info {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .contact-info span {
   display: inline-flex;
   align-items: center;
-  margin: 0 5px;
+  margin: 0 3px;
+  font-size: 0.9em;
 }
 
 .contact-info a {
@@ -75,39 +77,71 @@ h2.title {
 
 /* Section styling */
 section {
-  margin-bottom: 25px;
+  margin-bottom: 18px; /* Slightly reduced section bottom margin */
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 600;
   color: #2c3e50;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 5px;
+  margin-top: 18px; /* Slightly reduced heading top margin */
+  margin-bottom: 8px; /* Slightly reduced heading bottom margin */
+  border-bottom: 1.5px solid #3498db;
+  padding-bottom: 3px;
 }
 
-h3 {
-  font-size: 1.2em;
-  font-weight: 600;
-  margin-top: 12px;
-  margin-bottom: 5px;
-  color: #34495e;
+/* Style for experience job titles */
+.job > h3 {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-items: center;
+  margin-bottom: 0;
 }
 
-h4 {
-  font-size: 1.1em;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #2c3e50;
+.job > h3 > span.company {
+  display: block;
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+.job > h3 > span.duration {
+  justify-self: end;
+  font-style: italic;
+  color: #95a5a6;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+/* Style for education degree titles */
+.degree > h3 {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.degree > h3 > span.institution {
+  display: block;
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.degree > h3 > span.duration {
+  justify-self: end;
+  font-style: italic;
+  color: #95a5a6;
+  font-size: 0.9em;
+  font-weight: normal;
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 500;
   color: #7f8c8d;
-  margin-bottom: 5px;
+  margin-bottom: 2px; /* Slightly reduced h5 bottom margin */
 }
 
 /* Lists styling */
@@ -120,19 +154,20 @@ h5 {
 .coding-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 10px;
+  margin-top: 6px; /* Slightly reduced list top margin */
 }
 
 .skills-list li {
-  margin-bottom: 8px;
+  margin-bottom: 5px; /* Slightly reduced skill item bottom margin */
   padding-left: 5px;
+  font-size: 0.95em;
 }
 
 .projects-list li,
 .experience-list li,
 .education-list li {
-  margin-bottom: 18px;
-  padding-bottom: 15px;
+  margin-bottom: 10px; /* Reduced list item bottom margin */
+  padding-bottom: 8px; /* Reduced list item bottom padding */
   border-bottom: 1px solid #eee;
 }
 
@@ -144,40 +179,48 @@ h5 {
 
 /* Project styling */
 .project h3 {
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0;
   color: #2c3e50;
 }
 
-.duration {
+.project h3 .duration {
   font-style: italic;
   color: #95a5a6;
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-weight: normal;
 }
 
-.description {
-  margin: 6px 0 10px;
-  line-height: 1.5;
+.project .links {
+  font-size: 0.9em;
+  margin-top: 1px; /* Further reduced links top margin */
 }
 
-.links a {
+.project .links a {
   color: #3498db;
   text-decoration: none;
-  margin-right: 12px;
-  font-size: 0.9em;
+  margin-right: 8px; /* Slightly reduced link right margin */
   transition: color 0.2s;
 }
 
-.links a:hover {
+.project .links a:hover {
   color: #2980b9;
   text-decoration: underline;
+}
+
+.project .description {
+  margin: 2px 0 6px; /* Further reduced description top and bottom margins */
+  line-height: 1.4;
+  font-size: 0.9em;
 }
 
 .company,
 .institution {
   font-style: italic;
   color: #7f8c8d;
-  font-size: 0.95em;
+  font-size: 0.9em;
 }
 
 /* Dividers */
@@ -185,24 +228,26 @@ h5 {
   border: 0;
   height: 1px;
   background: #e0e0e0;
-  margin: 25px 0;
+  margin: 16px 0; /* Slightly reduced divider top and bottom margins */
 }
 
 /* Markdown formatting */
 .markdown p {
-  margin: 5px 0;
-  line-height: 1.5;
+  margin: 2px 0; /* Slightly reduced paragraph top and bottom margins */
+  line-height: 1.4;
+  font-size: 0.9em;
 }
 
 .markdown ul,
 .markdown ol {
-  margin: 5px 0;
-  padding-left: 20px;
+  margin: 2px 0; /* Slightly reduced list top and bottom margins */
+  padding-left: 16px; /* Slightly reduced list padding */
 }
 
 .markdown ul li,
 .markdown ol li {
-  margin-bottom: 3px;
+  margin-bottom: 1px; /* Slightly reduced list item bottom margin */
+  font-size: 0.9em;
 }
 
 .markdown strong {
@@ -216,32 +261,60 @@ h5 {
 .markdown code {
   font-family: "Courier New", monospace;
   background-color: #f5f5f5;
-  padding: 2px 4px;
+  padding: 1px 3px; /* Slightly reduced code padding */
   border-radius: 3px;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 /* Print styles */
 @media print {
   body {
     background-color: white;
-    font-size: 10pt;
+    font-size: 9pt;
+    line-height: 1.3;
   }
 
   .resume-container {
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     box-shadow: none;
     max-width: 100%;
+  }
+
+  h1.name {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    margin-top: 12px; /* Reduced print heading top margin */
+    margin-bottom: 6px; /* Reduced print heading bottom margin */
+  }
+
+  /* Print styles for grid */
+  .job > h4,
+  .degree > h3 {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .job > h4 > span.company,
+  .degree > h3 > span.institution {
+    display: block;
+  }
+
+  .job > h4 > span.duration,
+  .degree > h3 > span.duration {
+    justify-self: end;
+  }
+
+  .section-divider {
+    margin: 10px 0; /* Reduced print divider margin */
   }
 
   a {
     text-decoration: none;
     color: #2c3e50;
-  }
-
-  .section-divider {
-    margin: 15px 0;
   }
 
   .resume-popup-overlay,
@@ -250,151 +323,12 @@ h5 {
   }
 }
 
-/* Resume Generator Button */
-.resume-generator-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  margin: 20px 0;
-}
-
-.resume-generator-btn:hover {
-  background-color: #2980b9;
-}
-
-/* Resume Popup Overlay */
-.resume-popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* Resume Popup */
-.resume-popup {
-  background-color: white;
-  width: 90%;
-  max-width: 500px;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  max-height: 90vh;
-}
-
-/* Popup Header */
-.resume-popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.resume-popup-header h2 {
-  margin: 0;
-  color: #2c3e50;
-  font-size: 1.5em;
-  border-bottom: none;
-}
-
-.resume-popup-close {
-  background: none;
-  border: none;
-  font-size: 1.8em;
-  cursor: pointer;
-  color: #95a5a6;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: background-color 0.2s;
-}
-
-.resume-popup-close:hover {
-  background-color: #f5f5f5;
-  color: #7f8c8d;
-}
-
-/* Popup Content */
-.resume-popup-content {
-  padding: 20px;
-  overflow-y: auto;
-}
-
-.resume-popup-content p {
-  margin: 0 0 15px;
-  color: #555;
-}
-
-/* Checkbox Container */
-.checkbox-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.checkbox-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.checkbox-item input[type="checkbox"] {
-  margin-right: 8px;
-}
-
-.checkbox-item label {
-  cursor: pointer;
-  user-select: none;
-  color: #34495e;
-}
-
-/* Popup Footer */
-.resume-popup-footer {
-  padding: 15px 20px;
-  border-top: 1px solid #e0e0e0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.generate-resume-btn {
-  padding: 8px 16px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.2s;
-}
-
-.generate-resume-btn:hover {
-  background-color: #2980b9;
-}
-
 /* Print Button */
 button#print-resume {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 8px 16px;
+  top: 15px;
+  right: 15px;
+  padding: 6px 12px;
   background-color: #3498db;
   color: white;
   border: none;
@@ -402,6 +336,7 @@ button#print-resume {
   cursor: pointer;
   z-index: 100;
   transition: background-color 0.2s;
+  font-size: 0.9em;
 }
 
 button#print-resume:hover {

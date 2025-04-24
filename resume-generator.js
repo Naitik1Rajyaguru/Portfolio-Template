@@ -249,14 +249,14 @@ function generateResumeContent(data, includedSections) {
     resumeBodyContent += `<section class="experience"><h2>Experience</h2>`;
     ["internship", "fulltime"].forEach((type) => {
       if (data.experience[type] && data.experience[type].length > 0) {
-        resumeBodyContent += `<h3>${
+        resumeBodyContent += `<h2>${
           type.charAt(0).toUpperCase() + type.slice(1)
-        }</h3><ul class="experience-list">`;
+        }</h2><ul class="experience-list">`;
         data.experience[type].forEach((exp) => {
           resumeBodyContent += `<li class="job">
-              <h4>${exp.designation} <span class="company">(${
+              <h3>${exp.designation} <span class="company">(${
             exp.company
-          })</span> <span class="duration">(${exp.duration})</span></h4>
+          })</span> <span class="duration">(${exp.duration})</span></h3>
               <h5>Project: ${exp.projectTitle}</h5>
               <div class="description markdown">${marked.parse(
                 exp.description
