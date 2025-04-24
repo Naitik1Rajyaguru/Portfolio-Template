@@ -61,5 +61,6 @@ Edit the CSS variables in the `:root` selector in `styles.css`:
 
 - Font Awesome for icons (CDN)
 - Google Fonts for typography
+- Marked for formatting some details (CDN)
 - Claude.ai for creating this whole project
-- gemini.ai for adding details when claude free access expired
+- gemini.ai for adding details when claude free access expired / claude was not able to memories context
