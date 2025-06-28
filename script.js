@@ -194,11 +194,11 @@ function populateExperience(experience) {
       const expCard = document.createElement("div");
       expCard.className = "experience-card";
       expCard.innerHTML = `
-                <h3>${exp.company}</h3>
-                <h4>${exp.designation}</h4>
-                <div class="duration">${exp.duration}</div>
-                <h4>Project: ${exp.projectTitle}</h4>
-                <p>${exp.description}</p>
+                <h3>${exp.company ?? ""}</h3>
+                <h4>${exp.designation ?? ""}</h4>
+                <div class="duration">${exp.duration ?? ""}</div>
+                <h4>Project: ${exp.projectTitle ?? ""}</h4>
+                <p>${exp.description ?? ""}</p>
             `;
       internshipContainer.appendChild(expCard);
     });
@@ -213,11 +213,11 @@ function populateExperience(experience) {
       const expCard = document.createElement("div");
       expCard.className = "experience-card";
       expCard.innerHTML = `
-                <h3>${exp.company}</h3>
-                <h4>${exp.designation}</h4>
-                <div class="duration">${exp.duration}</div>
-                <h4>Project: ${exp.projectTitle}</h4>
-                <p>${exp.description}</p>
+                <h3>${exp.company ?? ""}</h3>
+                <h4>${exp.designation ?? ""}</h4>
+                <div class="duration">${exp.duration ?? ""}</div>
+                <h4>Project: ${exp.projectTitle ?? ""}</h4>
+                <p>${marked.parse(exp.description) ?? ""}</p>
             `;
       fulltimeContainer.appendChild(expCard);
     });

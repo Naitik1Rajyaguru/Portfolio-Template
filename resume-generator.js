@@ -246,28 +246,49 @@ function generateResumeContent(data, includedSections) {
 
   // Experience section with markdown support
   if (includedSections.includes("experience") && data.experience) {
-    resumeBodyContent += `<section class="experience"><h2>Experience</h2>`;
-    ["internship", "fulltime"].forEach((type) => {
-      if (data.experience[type] && data.experience[type].length > 0) {
-        resumeBodyContent += `<h2>${
-          type.charAt(0).toUpperCase() + type.slice(1)
-        }</h2><ul class="experience-list">`;
-        data.experience[type].forEach((exp) => {
+  resumeBodyContent += `<section class="experience"><h2>Experience</h2>`;
+
+  ["internship", "fulltime"].forEach((type) => {
+    if (Array.isArray(data.experience[type]) && data.experience[type].length > 0) {
+      resumeBodyContent += `<h2>${
+        type.charAt(0).toUpperCase() + type.slice(1)
+      }</h2><ul class="experience-list">`;
+
+      data.experience[type].forEach((exp) => {
+        if (exp && typeof exp === "object") {
+          const designation = exp.designation ?? "";
+          const company = exp.company ?? "";
+          const duration = exp.duration ?? "";
+
+          let titleSection = "";
+          if (designation || company || duration) {
+            titleSection += `<h3>`;
+            if (designation) titleSection += designation;
+
+            // Only add company if it's not empty
+            if (company) titleSection += ` <span class="company">(${company})</span>`;
+
+            // Only add duration if it's not empty
+            if (duration) titleSection += ` <span class="duration">(${duration})</span>`;
+
+            titleSection += `</h3>`;
+          }
+
           resumeBodyContent += `<li class="job">
-              <h3>${exp.designation} <span class="company">(${
-            exp.company
-          })</span> <span class="duration">(${exp.duration})</span></h3>
-              <h5>Project: ${exp.projectTitle}</h5>
-              <div class="description markdown">${marked.parse(
-                exp.description
-              )}</div>
-            </li>`;
-        });
-        resumeBodyContent += `</ul>`;
-      }
-    });
-    resumeBodyContent += `</section><hr class="section-divider">`;
-  }
+            ${titleSection}
+            <h5>Project: ${exp.projectTitle ?? ""}</h5>
+            <div class="description markdown">${marked.parse(exp.description ?? "")}</div>
+          </li>`;
+        }
+      });
+
+      resumeBodyContent += `</ul>`;
+    }
+  });
+
+  resumeBodyContent += `</section><hr class="section-divider">`;
+}
+
 
   // Education section
   if (

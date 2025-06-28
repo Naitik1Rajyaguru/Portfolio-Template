@@ -1,50 +1,33 @@
 {
-  "name": "John Doe",
-  "title": "Full Stack Developer",
-  "description": "Passionate software engineer with expertise in web development, cloud solutions, and AI. I love building scalable applications that solve real-world problems.",
-  "profilePhoto": "/api/placeholder/400/400",
-  "resumeLink": "#",
+  "name": "Naitik Rajyaguru",
+  "title": "Software Developer",
+  "description": "Results-driven Software Developer with hands-on experience in building scalable web applications, AI-driven internal tools, and real-time collaborative platforms. Proficient in both frontend and backend development with additional exposure to automation, NLP, and system optimization. Adept at leveraging emerging technologies to solve real-world problems efficiently while delivering high-quality solutions.",
+  "profilePhoto": "./profile.jpg",
+  "resumeLink": "",
   "socialProfiles": [
     {
-      "name": "GitHub",
-      "link": "https://github.com/johndoe",
-      "icon": "fab fa-github"
-    },
-    {
       "name": "LinkedIn",
-      "link": "https://linkedin.com/in/johndoe",
-      "icon": "fab fa-linkedin"
+      "link": "https://www.linkedin.com/in/naitik-rajyaguru/",
+      "icon": "linkedin"
     },
     {
-      "name": "Twitter",
-      "link": "https://twitter.com/johndoe",
-      "icon": "fab fa-twitter"
+      "name": "GitHub",
+      "link": "https://github.com/Naitik1Rajyaguru",
+      "icon": "github"
     }
   ],
   "codingProfiles": [
     {
       "name": "LeetCode",
-      "link": "https://leetcode.com/johndoe",
-      "username": "johndoe",
-      "rating": "Top 5%"
+      "link": "https://leetcode.com/naitik_05/",
+      "username": "naitik_05",
+      "rating": ""
     },
     {
-      "name": "GeeksforGeeks",
-      "link": "https://geeksforgeeks.org/user/johndoe",
-      "username": "johndoe",
-      "rating": "Expert"
-    },
-    {
-      "name": "HackerRank",
-      "link": "https://hackerrank.com/johndoe",
-      "username": "johndoe",
-      "rating": "5 Star"
-    },
-    {
-      "name": "CodeChef",
-      "link": "https://codechef.com/users/johndoe",
-      "username": "johndoe",
-      "rating": "1800+"
+      "name": "Codeforces",
+      "link": "https://codeforces.com/profile/naitikrajyaguru",
+      "username": "naitikrajyaguru",
+      "rating": ""
     }
   ],
   "skills": [
@@ -54,149 +37,115 @@
         "HTML",
         "CSS",
         "JavaScript",
-        "React",
-        "Vue.js",
-        "Angular"
+        "Angular (Basic)",
+        "React (Basic)"
       ]
     },
     {
       "title": "Backend",
       "skills": [
-        "Node.js",
-        "Python",
-        "Java",
-        "Express.js",
-        "Django",
-        "Spring"
+        "Node.js (Basic)",
+        ".NET (C#) (Basic)"
       ]
     },
     {
-      "title": "Databases",
+      "title": "Scripting",
       "skills": [
-        "MySQL",
-        "PostgreSQL",
-        "MongoDB",
-        "Firebase"
+        "Python"
       ]
     },
     {
-      "title": "Cloud",
+      "title": "Languages",
       "skills": [
-        "AWS",
-        "Azure",
-        "Google Cloud Platform"
-      ]
-    },
-    {
-      "title": "Tools & Technologies",
-      "skills": [
-        "Git",
-        "Docker",
-        "Kubernetes",
-        "CI/CD"
+        "C",
+        "C++",
+        "PHP"
       ]
     }
   ],
-  "certifications": [
-    {
-      "title": "AWS Certified Developer - Associate",
-      "link": "#"
-    },
-    {
-      "title": "Google Cloud Professional Cloud Architect",
-      "link": "#"
-    },
-    {
-      "title": "Microsoft Certified: Azure Fundamentals",
-      "link": "#"
-    }
-  ],
+  "certifications": [],
   "education": [
     {
-      "institution": "Stanford University",
-      "degree": "M.S. in Computer Science",
-      "duration": "2020 - 2022",
-      "description": "Specialized in Artificial Intelligence and Machine Learning"
-    },
-    {
-      "institution": "MIT",
-      "degree": "B.S. in Computer Science",
-      "duration": "2016 - 2020",
-      "description": "Minor in Mathematics, Dean's List all semesters"
+      "institution": "Nirma University",
+      "degree": "Bachelor's Degree",
+      "duration": "CGPA: 7.9",
+      "description": "Completed undergraduate studies with a solid academic record and practical exposure to real-world projects in software development."
     }
   ],
   "projects": [
     {
-      "title": "E-commerce Platform",
-      "duration": "Jan 2023 - Present",
-      "description": "Built a full-featured e-commerce platform with React, Node.js, and MongoDB. Implemented user authentication, product catalog, shopping cart, and payment integration.",
-      "githubLink": "https://github.com/johndoe/ecommerce",
-      "liveLink": "https://ecommerce-demo.com"
+      "title": "Automated News Updater",
+      "duration": "",
+      "description": "Developed a Python-based web scraping tool to extract and format daily news headlines from multiple websites. Designed a GUI for user registration with email and implemented an automated mailing system to send news summaries to registered users daily.",
+      "githubLink": "https://github.com/Naitik1Rajyaguru/News-Summerizer",
+      "liveLink": ""
     },
     {
-      "title": "AI Image Recognition",
-      "duration": "Mar 2022 - Dec 2022",
-      "description": "Developed a machine learning model for image recognition using TensorFlow. Achieved 95% accuracy on test data.",
-      "githubLink": "https://github.com/johndoe/ai-image-recognition"
+      "title": "Real-time Collaborative Editor and Chat Platform",
+      "duration": "",
+      "description": "Built a socket-based multi-user chat application with real-time document collaboration functionality similar to Google Docs. Enabled simultaneous editing and communication among multiple users in shared spaces.",
+      "githubLink": "https://github.com/Naitik1Rajyaguru/socker_multicommunication",
+      "liveLink": "https://socker-multicommunication.onrender.com/"
     },
     {
-      "title": "Personal Finance Tracker",
-      "duration": "Sep 2021 - Feb 2022",
-      "description": "Created a web application to track personal expenses and provide insights on spending habits. Used Vue.js and Firebase.",
-      "githubLink": "https://github.com/johndoe/finance-tracker",
-      "liveLink": "https://finance-tracker-demo.com"
+      "title": "Movie Recommendation System",
+      "duration": "",
+      "description": "Implemented a content-based movie recommendation system using similarity metrics and NLP-driven user reviews. Developed a Streamlit-based Python interface to provide interactive movie suggestions.",
+      "githubLink": "",
+      "liveLink": ""
     },
     {
-      "title": "Task Management App",
-      "duration": "Jun 2021 - Aug 2021",
-      "description": "Built a collaborative task management application with real-time updates using Socket.io and React.\n\n Built a collaborative task management application with real-time updates using Socket.io and React.",
-      "githubLink": "https://github.com/johndoe/task-manager",
-      "liveLink": "https://task-manager-demo.com"
+      "title": "Flappy Bird Game (Basic)",
+      "duration": "",
+      "description": "Created a simple version of the Flappy Bird game using Unity and C#, focusing on game logic, character motion, and interactive gameplay elements.",
+      "githubLink": "https://github.com/Naitik1Rajyaguru/FlappyBird",
+      "liveLink": ""
     }
   ],
   "experience": {
     "internship": [
       {
-        "company": "Google",
-        "duration": "May 2021 - Aug 2021",
-        "designation": "Software Engineering Intern",
-        "projectTitle": "Search Optimization Algorithm",
-        "description": "Worked on improving Google's search algorithm efficiency by 15%. Implemented machine learning techniques to enhance search result relevance."
+        "company": "Zeus Learning",
+        "duration": "",
+        "designation": "Software Developer Intern",
+        "projectTitle": "Full Stack Job Profiler System",
+        "description": "Developed a full stack job profiling platform using Angular, .NET, and MySQL. Enabled users to create profiles and register within the company portal efficiently."
       },
       {
-        "company": "Microsoft",
-        "duration": "May 2020 - Aug 2020",
-        "designation": "Software Development Intern",
-        "projectTitle": "Azure DevOps Enhancements",
-        "description": "Developed new features for Azure DevOps that improved CI/CD workflow efficiency for enterprise customers."
+        "projectTitle": "QA Automation System",
+        "description": "Engineered an automated QA testing system to schedule and execute test cases at predefined intervals, generating detailed test execution reports to streamline the QA process."
       }
     ],
     "fulltime": [
       {
-        "company": "Amazon",
-        "duration": "Jan 2023 - Present",
-        "designation": "Senior Software Engineer",
-        "projectTitle": "AWS Lambda Improvements",
-        "description": "Leading a team of 5 engineers to enhance AWS Lambda performance and scalability. Reduced cold start times by 40%."
+        "company": "Zeus Learning",
+        "duration": "",
+        "designation": "Software Developer",
+        "projectTitle": "AI-Powered Internal Tools Suite",
+        "description": "Led the development of multiple AI-driven internal tools that reduced organizational costs by approximately 60% using semantic caching and prompt caching strategies. Delivered key projects including:\n- A RAG-based chatbot for internal query handling.\n- An advanced SQL validator capable of detecting critical optimization rules to improve stored procedure and query performance by 70-80%.\n- An accessibility compliance assistant following WCAG standards for validating web content, images, text, and code blocks.\n- An adaptive system that personalizes user experiences based on system inputs.\n\nBuilt a CI/CD pipeline using Liquibase to automate SQL deployment and generate validation reports at push-time. Utilized Python, JavaScript, HTML, CSS, MongoDB, SQL, Pinecone, FAISS, and Liquibase, deployed on internal virtual machines."
       },
       {
-        "company": "Facebook",
-        "duration": "Aug 2022 - Dec 2022",
-        "designation": "Software Engineer",
-        "projectTitle": "News Feed Algorithm",
-        "description": "Optimized the news feed recommendation system to increase user engagement by 12%."
+        "projectTitle": "Authentication Microservices",
+        "description": "Developed secure authentication microservices supporting both OAuth2 (two-token sliding window-based expiry system) and LDAP-based authentication for internal organizational tools. Provided seamless session management and integration with the organization's Active Directory."
+      },
+      {
+        "projectTitle": "Content Simplification and Audio Generation Tool",
+        "description": "Built a dynamic content simplification tool that adjusts text complexity based on age groups and generates real-time audio with word-level highlighting. Integrated multi-language support and contextual simplification features to make complex topics accessible to diverse user groups."
+      },
+      {
+        "projectTitle": "Client LMS Performance Optimization",
+        "description": "Worked on a live client Learning Management System (LMS) project based on PHP. Resolved critical SonarQube issues, optimized stored procedures and APIs, and successfully reduced query execution time by 80%, improving overall system responsiveness and efficiency."
       }
     ]
   },
   "hobbies": [
-    "Reading",
-    "Hiking",
-    "Photography",
-    "Gaming",
-    "Traveling"
+    "Vibe Coding",
+    "Music",
+    "Web Series/Movies",
+    "Gaming"
   ],
   "contact": {
-    "email": "john.doe@hi.com",
-    "phone": "+1 (123) 456-7890"
+    "email": "naitikrajyaguru@gmail.com",
+    "phone": "9924254848"
   }
 }
