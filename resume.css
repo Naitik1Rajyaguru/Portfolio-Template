@@ -1,147 +1,163 @@
 /* Main resume styles */
 body {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 10pt;
-  line-height: 1.3;
+  font-family: "Inter", sans-serif; /* Modern, clean font */
+  font-size: 10.8pt; /* Slightly larger base font size for readability */
+  line-height: 1.6; /* Increased line height for better spacing */
   color: #333;
-  background-color: #f0f0f0;
+  background-color: #f5f7fa; /* A very light, soft grey-blue background */
   margin: 0;
   padding: 0;
 }
 
 .resume-container {
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 880px; /* Slightly wider container */
+  margin: 30px auto; /* More margin top/bottom */
   background-color: white;
-  padding: 30px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  padding: 45px; /* Increased padding inside the container */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Stronger, softer shadow */
+  border-radius: 12px; /* More rounded corners */
+  border: 1px solid #e5e5e5; /* Subtle, light border */
 }
 
 /* Header styles */
 .personal {
-  margin-bottom: 15px;
+  margin-bottom: 30px; /* More margin */
 }
 
 h1.name {
-  font-size: 2em;
+  font-size: 2.6em; /* Slightly larger name */
   font-weight: 700;
-  margin-bottom: 3px;
+  margin-bottom: 8px; /* Slightly more margin */
   text-align: center;
-  color: #2c3e50;
+  color: #2c3e50; /* Deeper dark for name */
+  text-transform: uppercase;
+  letter-spacing: 1.2px; /* Subtle letter spacing */
 }
 
 h2.title {
-  font-size: 1.2em;
-  font-weight: 400;
-  color: #7f8c8d;
-  margin-bottom: 10px;
+  font-size: 1.3em; /* Slightly larger title */
+  font-weight: 500;
+  color: #6c757d; /* Softer color */
+  margin-bottom: 20px; /* More margin */
   text-align: center;
+  letter-spacing: 0.4px;
 }
 
 .summary {
   text-align: center;
-  margin: 0 auto 15px;
-  max-width: 600px;
-  line-height: 1.4;
+  margin: 0 auto 30px; /* More margin */
+  max-width: 750px; /* Wider summary */
+  line-height: 1.7; /* Increased line height */
   color: #555;
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
 .contact-info {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px; /* More margin */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 18px; /* More gap */
+  font-size: 0.98em; /* Slightly larger */
 }
 
 .contact-info span {
   display: inline-flex;
   align-items: center;
-  margin: 0 3px;
-  font-size: 0.9em;
+  margin: 0 5px;
+  color: #555;
 }
 
 .contact-info a {
-  color: #3498db;
+  color: #6c63ff; /* Primary color from portfolio CSS */
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transform for subtle hover */
+  font-weight: 500;
 }
 
 .contact-info a:hover {
-  color: #2980b9;
+  color: #5b52e0; /* Darker primary on hover */
   text-decoration: underline;
+  transform: translateY(-2px); /* Subtle lift on hover */
 }
 
 /* Section styling */
 section {
-  margin-bottom: 18px; /* Slightly reduced section bottom margin */
+  margin-bottom: 35px; /* More section bottom margin */
 }
 
 h2 {
-  font-size: 1.4em;
-  font-weight: 600;
+  font-size: 1.8em; /* Larger section heading */
+  font-weight: 700;
   color: #2c3e50;
-  margin-top: 18px; /* Slightly reduced heading top margin */
-  margin-bottom: 8px; /* Slightly reduced heading bottom margin */
-  border-bottom: 1.5px solid #3498db;
-  padding-bottom: 3px;
+  margin-top: 30px; /* More heading top margin */
+  margin-bottom: 15px; /* More heading bottom margin */
+  border-bottom: 2.5px solid #6c63ff; /* Thicker primary border */
+  padding-bottom: 8px; /* More padding */
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
 /* Style for experience job titles */
 .job > h3 {
   display: grid;
-  grid-template-columns: auto auto 1fr auto;
-  align-items: center;
-  margin-bottom: 0;
+  grid-template-columns: 1fr auto; /* Simpler grid for better responsiveness */
+  align-items: baseline; /* Align to text baseline */
+  margin-bottom: 6px;
+  font-size: 1.18em; /* Slightly larger job title */
+  color: #333;
+  font-weight: 600;
 }
 
 .job > h3 > span.company {
   display: block;
-  font-style: italic;
-  color: #7f8c8d;
-  font-size: 0.9em;
+  font-style: normal;
+  color: #6c757d;
+  font-size: 0.98em; /* Slightly larger */
+  font-weight: 500;
 }
 
 .job > h3 > span.duration {
   justify-self: end;
-  font-style: italic;
-  color: #95a5a6;
-  font-size: 0.9em;
-  font-weight: normal;
+  font-style: normal;
+  color: #7f8c8d;
+  font-size: 0.92em;
+  font-weight: 400;
 }
 
 /* Style for education degree titles */
 .degree > h3 {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  margin-bottom: 0;
+  grid-template-columns: 1fr auto; /* Simpler grid for better responsiveness */
+  align-items: baseline;
+  margin-bottom: 6px;
+  font-size: 1.18em;
+  color: #333;
+  font-weight: 600;
 }
 
 .degree > h3 > span.institution {
   display: block;
-  font-style: italic;
-  color: #7f8c8d;
-  font-size: 0.9em;
-  font-weight: normal;
+  font-style: normal;
+  color: #6c757d;
+  font-size: 0.98em;
+  font-weight: 500;
 }
 
 .degree > h3 > span.duration {
   justify-self: end;
-  font-style: italic;
-  color: #95a5a6;
-  font-size: 0.9em;
-  font-weight: normal;
+  font-style: normal;
+  color: #7f8c8d;
+  font-size: 0.92em;
+  font-weight: 400;
 }
 
 h5 {
-  font-size: 0.9em;
-  font-weight: 500;
-  color: #7f8c8d;
-  margin-bottom: 2px; /* Slightly reduced h5 bottom margin */
+  font-size: 0.98em; /* Slightly larger h5 */
+  font-weight: 600;
+  color: #6c757d;
+  margin-bottom: 5px; /* More h5 bottom margin */
 }
 
 /* Lists styling */
@@ -154,27 +170,55 @@ h5 {
 .coding-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 6px; /* Slightly reduced list top margin */
+  margin-top: 12px; /* More list top margin */
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px; /* Spaced out skills */
+  margin-bottom: 12px;
 }
 
 .skills-list li {
-  margin-bottom: 5px; /* Slightly reduced skill item bottom margin */
-  padding-left: 5px;
-  font-size: 0.95em;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 1em; /* Slightly larger skill item font */
+  background-color: #f0f3f6; /* Light background for skills */
+  padding: 5px 12px;
+  border-radius: 6px; /* Slightly more rounded */
+  color: #555;
+  border: 1px solid #e6e9ed;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #6c63ff; /* Primary color on hover */
+  color: white;
+  border-color: #6c63ff;
 }
 
 .projects-list li,
 .experience-list li,
-.education-list li {
-  margin-bottom: 10px; /* Reduced list item bottom margin */
-  padding-bottom: 8px; /* Reduced list item bottom padding */
-  border-bottom: 1px solid #eee;
+.education-list li,
+.certifications-list li,
+.social-list li,
+.coding-list li {
+  margin-bottom: 18px; /* Increased list item bottom margin */
+  padding-bottom: 15px; /* Increased list item bottom padding */
+  border-bottom: 1px solid #f0f0f0; /* Lighter border */
 }
 
 .projects-list li:last-child,
 .experience-list li:last-child,
-.education-list li:last-child {
+.education-list li:last-child,
+.certifications-list li:last-child,
+.social-list li:last-child,
+.coding-list li:last-child {
   border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Project styling */
@@ -182,142 +226,212 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0;
+  margin-bottom: 6px;
   color: #2c3e50;
+  font-size: 1.18em;
+  font-weight: 600;
 }
 
 .project h3 .duration {
-  font-style: italic;
-  color: #95a5a6;
-  font-size: 0.85em;
-  font-weight: normal;
+  font-style: normal;
+  color: #7f8c8d;
+  font-size: 0.92em;
+  font-weight: 400;
 }
 
 .project .links {
-  font-size: 0.9em;
-  margin-top: 1px; /* Further reduced links top margin */
+  font-size: 0.98em;
+  margin-top: 8px; /* More links top margin */
 }
 
 .project .links a {
-  color: #3498db;
+  color: #6c63ff;
   text-decoration: none;
-  margin-right: 8px; /* Slightly reduced link right margin */
-  transition: color 0.2s;
+  margin-right: 15px; /* More link right margin */
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
 }
 
 .project .links a:hover {
-  color: #2980b9;
+  color: #5b52e0;
   text-decoration: underline;
+  transform: translateX(3px); /* Subtle shift on hover */
 }
 
 .project .description {
-  margin: 2px 0 6px; /* Further reduced description top and bottom margins */
-  line-height: 1.4;
-  font-size: 0.9em;
+  margin: 6px 0 12px; /* More description margins */
+  line-height: 1.6;
+  font-size: 0.98em;
+  color: #555;
 }
 
 .company,
 .institution {
-  font-style: italic;
-  color: #7f8c8d;
-  font-size: 0.9em;
+  font-style: normal;
+  color: #6c757d;
+  font-size: 0.98em;
+  font-weight: 500;
 }
 
 /* Dividers */
 .section-divider {
   border: 0;
-  height: 1px;
+  height: 2px; /* Thicker divider */
   background: #e0e0e0;
-  margin: 16px 0; /* Slightly reduced divider top and bottom margins */
+  margin: 30px 0; /* More divider margins */
 }
 
-/* Markdown formatting */
+/* Markdown formatting for descriptions */
 .markdown p {
-  margin: 2px 0; /* Slightly reduced paragraph top and bottom margins */
-  line-height: 1.4;
-  font-size: 0.9em;
+  margin: 6px 0; /* More paragraph margins */
+  line-height: 1.6;
+  font-size: 0.98em;
+  color: #555;
 }
 
 .markdown ul,
 .markdown ol {
-  margin: 2px 0; /* Slightly reduced list top and bottom margins */
-  padding-left: 16px; /* Slightly reduced list padding */
+  margin: 6px 0 12px 0; /* More list margins */
+  padding-left: 30px; /* More list padding */
+  list-style: disc; /* Ensure bullet points for unordered lists */
 }
 
 .markdown ul li,
 .markdown ol li {
-  margin-bottom: 1px; /* Slightly reduced list item bottom margin */
-  font-size: 0.9em;
+  margin-bottom: 5px; /* More list item bottom margin */
+  font-size: 0.98em;
+  color: #555;
 }
 
 .markdown strong {
-  font-weight: 600;
+  font-weight: 700;
+  color: #333;
 }
 
 .markdown em {
   font-style: italic;
+  color: #6c757d;
 }
 
 .markdown code {
-  font-family: "Courier New", monospace;
-  background-color: #f5f5f5;
-  padding: 1px 3px; /* Slightly reduced code padding */
-  border-radius: 3px;
-  font-size: 0.85em;
+  font-family: "Fira Code", monospace; /* Modern monospace font */
+  background-color: #f0f2f5;
+  padding: 3px 6px; /* More code padding */
+  border-radius: 5px;
+  font-size: 0.92em;
+  color: #c0392b; /* A subtle color for code */
 }
 
 /* Print styles */
 @media print {
   body {
     background-color: white;
-    font-size: 9pt;
-    line-height: 1.3;
+    font-size: 10pt; /* Slightly larger print font */
+    line-height: 1.5;
   }
 
   .resume-container {
     margin: 0;
-    padding: 15px;
+    padding: 25px; /* Reduced print padding */
     box-shadow: none;
     max-width: 100%;
+    border-radius: 0;
+    border: none;
   }
 
   h1.name {
-    font-size: 1.8em;
+    font-size: 2.4em; /* Adjusted print name size */
+    margin-bottom: 5px;
+  }
+
+  h2.title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .summary {
+    margin-bottom: 20px;
+    font-size: 0.95em;
+  }
+
+  .contact-info {
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+
+  .contact-info span {
+    font-size: 0.9em;
+  }
+
+  section {
+    margin-bottom: 25px;
   }
 
   h2 {
-    font-size: 1.3em;
-    margin-top: 12px; /* Reduced print heading top margin */
-    margin-bottom: 6px; /* Reduced print heading bottom margin */
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #6c63ff;
   }
 
   /* Print styles for grid */
-  .job > h4,
+  .job > h3,
   .degree > h3 {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr auto;
+    font-size: 1.1em;
   }
 
-  .job > h4 > span.company,
+  .job > h3 > span.company,
   .degree > h3 > span.institution {
-    display: block;
+    font-size: 0.95em;
   }
 
-  .job > h4 > span.duration,
+  .job > h3 > span.duration,
   .degree > h3 > span.duration {
-    justify-self: end;
+    font-size: 0.88em;
+  }
+
+  h5 {
+    font-size: 0.92em;
+  }
+
+  .skills-list li {
+    font-size: 0.95em;
+    padding: 4px 10px;
+  }
+
+  .projects-list li,
+  .experience-list li,
+  .education-list li,
+  .certifications-list li,
+  .social-list li,
+  .coding-list li {
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+  }
+
+  .project h3 {
+    font-size: 1.1em;
+  }
+
+  .project .links,
+  .project .description,
+  .markdown p,
+  .markdown ul li,
+  .markdown ol li {
+    font-size: 0.95em;
   }
 
   .section-divider {
-    margin: 10px 0; /* Reduced print divider margin */
+    margin: 20px 0;
   }
 
   a {
     text-decoration: none;
-    color: #2c3e50;
+    color: #2c3e50; /* Black for print links */
   }
 
-  .resume-popup-overlay,
   button#print-resume {
     display: none !important;
   }
@@ -326,19 +440,23 @@ h5 {
 /* Print Button */
 button#print-resume {
   position: fixed;
-  top: 15px;
-  right: 15px;
-  padding: 6px 12px;
-  background-color: #3498db;
+  top: 25px;
+  right: 25px;
+  padding: 12px 22px;
+  background-color: #00b894; /* Accent color from portfolio CSS */
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px; /* More rounded */
   cursor: pointer;
   z-index: 100;
-  transition: background-color 0.2s;
-  font-size: 0.9em;
+  transition: all 0.3s ease;
+  font-size: 1.05em;
+  box-shadow: 0 4px 12px rgba(0, 184, 148, 0.4);
+  font-weight: 600;
 }
 
 button#print-resume:hover {
-  background-color: #2980b9;
+  background-color: #00a880;
+  transform: translateY(-3px) scale(1.02); /* Subtle lift and scale */
+  box-shadow: 0 6px 15px rgba(0, 184, 148, 0.6);
 }
